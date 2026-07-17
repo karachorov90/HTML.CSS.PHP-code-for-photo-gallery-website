@@ -1,0 +1,339 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #8a8a8a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    text-decoration: none;
+    color: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 8px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0056b3;
+}
+
+.cta-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    background: linear-gradient(#8a8a8a(255, 0, 0, 0.5), #8a8a8a(255, 0, 0, 0.5));
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: #0056b3;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: #0056b3;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #000000;
+}
+
+.btn-success {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #0056b3;
+}
+
+
+.secondary-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.secondary-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 8%;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #8a8a8a;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* The Gallery Page */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.gallery-grid {
+    display: grid; /* */
+     /* Automatically creates columns with a minimum width of 250px, filling the row */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* */
+    gap: 20px; /* Space between the grid items */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    aspect-ratio: 1 / 1; /* Forces square grid cells */
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%; /* */
+    height: 100%; /* */
+    object-fit: cover; /* Keeps aspect ratio and fills the box without distortion */
+    display: block; /* */
+    transition: transform 0.5s ease; /* Smooth hover transition */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); /* Smooth gradient text backing */
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+    /* End of Gallery Page */
+
+
+    /* Contact Page */
+.contact-container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    margin:auto;
+    text-align: center;
+}
+
+.contact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.contact-table td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.label-cell {
+    width: 25%;
+    font-weight: 600;
+    color: #555555;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px !important;
+}
+
+.input-cell {
+    width: 75%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #4a90e2;
+}
+        /* End of Contact Page */

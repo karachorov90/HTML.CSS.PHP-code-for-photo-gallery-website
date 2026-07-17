@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AIRSpace</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<div class="contact-container">
+    <h2>Get in Touch</h2>
+    <form action="Connect.php" method="post">
+        <table class="contact-table">
+            <tr>
+                <td class="label-cell"><label for="name">Name</label></td>
+                <td class="input-cell"><input type="text" id="name" name="name" placeholder="Your full name" required></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="email">Email</label></td>
+                <td class="input-cell"><input type="email" id="email" name="email" placeholder="Your email address" required></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="message">Message</label></td>
+                <td class="input-cell"><textarea id="message" name="message" placeholder="Type your message here..." required></textarea></td>
+            </tr>
+            <tr>
+                <td></td> <!-- Empty cell to align the button under inputs -->
+                <td><button type="submit" class="submit-btn">Send Message</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+    <footer>
+        <p>&copy; 2026 AIRSpace. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
